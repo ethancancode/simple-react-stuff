@@ -51,7 +51,7 @@ function ToDo() {
 
   return (
     <div className="todo_wrapper">
-      <h1>To-Do List</h1>
+      <h1 className="todo_header">To-Do List</h1>
 
       <div className="input_container">
         <input

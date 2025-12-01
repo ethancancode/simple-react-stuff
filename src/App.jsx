@@ -5,12 +5,13 @@ import ColourPicker from "./Colour Picker/ColourPicker";
 import colourPickerImg from "./assets/ColourPicker.png";
 import ToDoList from "./To-Do List/ToDoList";
 import toDoListImg from "./assets/ToDoList.png";
+import Notes from "./Notes/Notes";
+import NotesImg from "./assets/Notes.png";
+
 
 function App() {
   return (
     <Routes>
-
-      {/* Home page */}
       <Route
         path="/"
         element={
@@ -32,14 +33,21 @@ function App() {
                 theme="light"
                 bgColor={"#f1efef"}
               />
+              <Card
+                name="Notes"
+                imageUrl={NotesImg}
+                page="/notes"
+                theme="light"
+                bgColor={"#f7f3f3"}
+              />
             </div>
           </div>
         }
       />
 
-      {/* Project route */}
       <Route path="/colour-picker" element={<ColourPicker />} />
       <Route path="/to-do-list" element={<ToDoList />} />
+      <Route path="/notes" element={<Notes />} />
 
     </Routes>
   );
